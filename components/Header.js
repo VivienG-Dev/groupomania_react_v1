@@ -57,7 +57,7 @@ function Header() {
           height={40}
           layout="fixed"
         />
-        <p className="font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
+        <p className="hidden lg:inline-flex text-sm font-semibold pr-3 whitespace-nowrap">{session.user.name}</p>
         {/* Création d'une classe plutôt qu'un composant pour les icones (voir icones plus haut) */}
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 // nextAuth va nous permettre d'avoir les informations de la session de l'utilisateur côté serveur
 import { getSession } from "next-auth/react";
 import { useSession, signIn } from "next-auth/react";
@@ -22,10 +23,11 @@ export default function Home() {
         {/* Header */}
         <Header />
 
-        <main className="flex">
+        <main className="flex bg-gray-100">
           {/* Sidebar */}
           <Sidebar />
           {/* Feed */}
+          <Feed />
           {/* Widgets */}
         </main>
       </div>
